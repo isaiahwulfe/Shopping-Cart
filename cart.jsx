@@ -159,7 +159,7 @@ const Products = (props) => {
   };
 
   const checkOut = () => {
-    let costs = cart.map((item) => item.cost);
+    let costs = cart.map((item) => item.Cost);
     const reducer = (accum, current) => accum + current;
     let newTotal = costs.reduce(reducer, 0);
     console.log(`total updated to ${newTotal}`);
